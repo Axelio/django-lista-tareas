@@ -2,6 +2,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Tarea(models.Model):
     '''
     Clase para el almacenamiento de tareas
@@ -15,6 +16,7 @@ class Tarea(models.Model):
 
     def __unicode__(self):
         return u'%s' % (self.titulo)
+
 
 class TareaDetalle(models.Model):
     '''
@@ -32,7 +34,7 @@ class TareaDetalle(models.Model):
 
     def __unicode__(self):
         return u'%s: %s' % (self.usuario, self.tarea)
-    
+
 
 class Categoria(models.Model):
     '''
